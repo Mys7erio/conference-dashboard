@@ -1,8 +1,8 @@
 import React from 'react';
-
+import '../Pages/AddInstitution.css'
 const AddInstitution = () => {
   return (
-    <div>
+    <div className='AddInstitution-container'>
         <h1>Add institutions</h1>
     </div>
   );
