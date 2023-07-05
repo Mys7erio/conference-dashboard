@@ -41,3 +41,29 @@ hr{
    color:#94918D;
    width: 90%;
 }
+
+.logout{
+    background-color: transparent;
+    margin-left: 45px;
+    margin-top: 37vh;
+}
+
+.logout:hover{
+    background-color: #f3f3f3;
+    color: black;
+    border: none;
+}
+
+.userdetails{
+    padding-left: 20px;
+    padding-right: 10px;
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.username{
+    margin-left: 20px;
+}
