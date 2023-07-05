@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { Sidebar, Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
+import { FaBuilding, FaBars, FaUserPlus, FaUserTag, FaChartLine,FaUserEdit, FaWalking} from 'react-icons/fa';
+import Logo from '../assets/KJCLogo.png';
+import userimage from '../assets/userimage.png'
 import { FaHome, FaBars} from 'react-icons/fa';
 import Logo from '../assets/KJCLogo.png';
 import '../Components/SuperAdminSidebar.css' 
@@ -19,6 +22,23 @@ const SuperAdminSidebar = () => {
             </div>
           </div>
           <hr />
+          <div className="userdetails">
+            <div className="userImage">
+              <img src={userimage} alt="" />
+            </div>
+            <div className="username">
+              <h3>Username</h3>
+            </div>
+          </div>
+          <hr />
+        <MenuItem icon={<FaBuilding />} component={<Link to="/AddInstitution"/>}>Create Institutions</MenuItem>
+        <MenuItem icon={<FaUserPlus />} component={<Link to="/CreateAdmin"/>}>Create Admin</MenuItem>
+        <MenuItem icon={<FaUserTag />} component={<Link to="/AssignAdmin"/>}>Assign Admin</MenuItem>
+        <MenuItem icon={<FaChartLine />} component={<Link to="/SuperAdminDashboard"/>}>Dashboard</MenuItem>
+        <MenuItem icon={<FaUserEdit />} component={<Link to="/UserManagement"/>}>User Management</MenuItem>
+        <button className='logout'>
+          <FaWalking /> Logout
+        </button>
         <MenuItem icon={<FaHome />} component={<Link to="/AddInstitution"/>}>ADD INSTITUTIONS</MenuItem>
       </Menu>
     </Sidebar>
