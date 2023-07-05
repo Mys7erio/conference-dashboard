@@ -10,12 +10,12 @@
     - Linux: Open terminal and run `curl -fsSL https://get.pnpm.io/install.sh | sh -`
 
 
-## Enable case sensitivity for the development folder in Windows:
-- Create a blank folder and name it `conference-dashboard`
-- Open powershell as administrator in the current directory and run `fsutil.exe file setCaseSensitiveInfo . enable`     
-- Now finally clone the dashboard repo using `git clone https://github.com/Mys7erio/conference-dashboard.git .` 
-
-
 # Tech Stack
  - ReactJS
  - Vanilla CSS along with **flexbox**
+
+
+# Workflow
+ - Pushing to the main branch is disabled.
+ - All changes must be made through a pull request.
+ - All pull requests created by you should be should be for the **`dev`** branch only.

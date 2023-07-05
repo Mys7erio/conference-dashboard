@@ -1,0 +1,43 @@
+.custom a{
+    color: white;
+}
+
+.custom a:hover{
+    color: black;
+}
+
+.collapseButton{
+    background-color: #66615B;
+}
+
+.topLogo{
+    padding-left: 20px;
+    padding-right: 10px;
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text{
+    margin-left: 5px;
+    width: 177px;
+    height: 67px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    width: 26px;
+    height: 26px;
+    padding: 0%;
+}
+
+hr{
+   color:#94918D;
+   width: 90%;
+}
