@@ -4,6 +4,8 @@ import { Sidebar, Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
 import { FaBuilding, FaBars, FaUserPlus, FaUserTag, FaChartLine,FaUserEdit, FaWalking} from 'react-icons/fa';
 import Logo from '../assets/KJCLogo.png';
 import userimage from '../assets/userimage.png'
+import { FaHome, FaBars} from 'react-icons/fa';
+import Logo from '../assets/KJCLogo.png';
 import '../Components/SuperAdminSidebar.css' 
 const SuperAdminSidebar = () => {
   const [collapsed, setCollapsed] = React.useState(false);
@@ -37,6 +39,7 @@ const SuperAdminSidebar = () => {
         <button className='logout'>
           <FaWalking /> Logout
         </button>
+        <MenuItem icon={<FaHome />} component={<Link to="/AddInstitution"/>}>ADD INSTITUTIONS</MenuItem>
       </Menu>
     </Sidebar>
     <main style={{ padding: 10 }}>  
