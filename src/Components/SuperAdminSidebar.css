@@ -42,18 +42,6 @@ hr{
    width: 90%;
 }
 
-.logout{
-    background-color: transparent;
-    margin-left: 45px;
-    margin-top: 37vh;
-}
-
-.logout:hover{
-    background-color: #f3f3f3;
-    color: black;
-    border: none;
-}
-
 .userdetails{
     padding-left: 20px;
     padding-right: 10px;
@@ -66,4 +54,19 @@ hr{
 
 .username{
     margin-left: 20px;
+}
+
+.SuperAdminSidebarEnd{
+    margin-top: 35vh;
+}
+
+.SidebarButtons{
+    background-color: transparent;
+    margin-left: 45px;
+}
+
+.SidebarButtons:hover{
+    background-color: #f3f3f3;
+    color: black;
+    border: none;
 }
