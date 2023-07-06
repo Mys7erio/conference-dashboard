@@ -41,20 +41,6 @@ hr{
    color:#94918D;
    width: 90%;
 }
-<<<<<<< HEAD
-=======
-.logout{
-    background-color: transparent;
-    margin-left: 45px;
-    margin-top: 37vh;
-}
-
-.logout:hover{
-    background-color: #f3f3f3;
-    color: black;
-    border: none;
-}
->>>>>>> e505ac3491fd657ff88e669a865d717ae9bb7c67
 
 .userdetails{
     padding-left: 20px;

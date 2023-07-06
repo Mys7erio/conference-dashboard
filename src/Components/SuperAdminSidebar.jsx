@@ -4,8 +4,6 @@ import { Sidebar, Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
 import { FaBuilding, FaBars, FaUserPlus, FaUserTag, FaChartLine,FaUserEdit, FaWalking, FaBell, FaWrench} from 'react-icons/fa';
 import Logo from '../assets/KJCLogo.png';
 import userimage from '../assets/userimage.png'
-import { FaHome, FaBars} from 'react-icons/fa';
-import Logo from '../assets/KJCLogo.png';
 import '../Components/SuperAdminSidebar.css' 
 const SuperAdminSidebar = () => {
   const [collapsed, setCollapsed] = React.useState(false);
