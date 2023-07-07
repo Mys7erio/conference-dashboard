@@ -30,9 +30,7 @@ const SuperAdminSidebar = () => {
           </div>
           <hr />
         <MenuItem icon={<FaBuilding />} component={<Link to="/AddInstitution"/>}>Create Institutions</MenuItem>
-        <MenuItem icon={<FaUserPlus />}>
-            <Link to="/CreateAdmin">Create Admin</Link>
-          </MenuItem>
+        <MenuItem icon={<FaUserPlus />} component={<Link to="/CreateAdmin"/>}>Create Admin</MenuItem>
         <MenuItem icon={<FaUserTag />} component={<Link to="/AssignAdmin"/>}>Assign Admin</MenuItem>
         <MenuItem icon={<FaChartLine />} component={<Link to="/SuperAdminDashboard"/>}>Dashboard</MenuItem>
         <MenuItem icon={<FaUserEdit />} component={<Link to="/UserManagement"/>}>User Management</MenuItem>
