@@ -9,7 +9,7 @@ const SuperAdminSidebar = () => {
   const [collapsed, setCollapsed] = React.useState(false);
   return (  
     <div style={{ display: 'flex', height: '100%', minHeight: '400px'}}>
-    <Sidebar collapsed={collapsed} className='custom' backgroundColor="#66615B" collapsedWidth="50px" transitionDuration={1000}>
+    <Sidebar collapsed={collapsed} className='custom' backgroundColor="#66615B" collapsedWidth="0px" transitionDuration={1000}>
       <Menu>
           <div className="topLogo">
             <div className="logo">
@@ -30,9 +30,7 @@ const SuperAdminSidebar = () => {
           </div>
           <hr />
         <MenuItem icon={<FaBuilding />} component={<Link to="/AddInstitution"/>}>Create Institutions</MenuItem>
-        <MenuItem icon={<FaUserPlus />}>
-            <Link to="/CreateAdmin">Create Admin</Link>
-          </MenuItem>
+        <MenuItem icon={<FaUserPlus/>} component={<Link to="/CreateAdmin"/>}>Create Admins</MenuItem>
         <MenuItem icon={<FaUserTag />} component={<Link to="/AssignAdmin"/>}>Assign Admin</MenuItem>
         <MenuItem icon={<FaChartLine />} component={<Link to="/SuperAdminDashboard"/>}>Dashboard</MenuItem>
         <MenuItem icon={<FaUserEdit />} component={<Link to="/UserManagement"/>}>User Management</MenuItem>
