@@ -1,0 +1,46 @@
+.CreateAdmin-container{
+    display:flex;
+}
+.card-extra-style{
+    font-family: Montserrat;
+    height: max-content;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    overflow:hidden;
+    flex-direction: column;
+    place-content: center;
+    margin: 0;
+   margin-right: 8px;
+   
+}
+.about{
+place-content: center;
+margin-top: -5%;
+place-items: center;
+font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+font-style: oblique ;
+font-size: 12.661px;
+line-height: 24px;
+margin-left: 10%;
+
+}
+.name{
+place-content: center; 
+font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 19.661px;
+line-height: 24px;
+color: #51CBCE;
+}
+.pic{
+    width:10vw;
+    border-radius:50%;
+    margin-top: -55%;
+    height:20vh ;
+}
+.bg-image{
+    
+    margin-top: -10%;
+}

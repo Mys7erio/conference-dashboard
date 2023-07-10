@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Pages/CreateAdmin.css'
+import InfoCard from '../Components/InfoCard';
 const CreateAdmin = () => {
   return (
     <div className='CreateAdmin-container'>
@@ -107,7 +108,8 @@ const CreateAdmin = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      <InfoCard/>
     </div>
   );
 };
