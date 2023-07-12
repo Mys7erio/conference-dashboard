@@ -96,6 +96,7 @@ const CreateAdmin = () => {
                       />
                     </div>
                   </div>
+<<<<<<< HEAD
                   <div className="col-md-4 pl-1">
                     <div className="form-group">
                       <label>Last Name</label>
@@ -104,6 +105,72 @@ const CreateAdmin = () => {
                         className="form-control"
                         placeholder="Walker"
                       />
+=======
+                </div>
+                <div className="col-md-4 pl-1">
+                  <div className="form-group">
+                    <label>Last Name</label>
+                    <input type="text" className="form-control" placeholder="Walker" />
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6 pr-1">
+                  <div className="form-group">
+                    <label>Email</label>
+                    <input type="email" className="form-control" placeholder="sara@gmail.com" defaultValue="sara@gmail.com" />
+                  </div>
+                </div>
+                <div className="col-md-6 pl-1">
+                  <div className="form-group">
+                    <label>Phone number</label>
+                    <input type="number" className="form-control" placeholder="9100000002"/>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="form-group">
+                    <label>Address</label>
+                    <input type="text" className="form-control" placeholder="Home Address" defaultValue="Melbourne, Australia" />
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-4 pr-1">
+                  <div className="form-group">
+                    <label>City</label>
+                    <input type="text" className="form-control" placeholder="City" defaultValue="Melbourne" />
+                  </div>
+                </div>
+                <div className="col-md-4 px-1">
+                  <div className="form-group">
+                    <label>Country</label>
+                    <input type="text" className="form-control" placeholder="Country" defaultValue="Australia" />
+                  </div>
+                </div>
+                <div className="col-md-4 pl-1">
+                  <div className="form-group">
+                    <label>Postal Code</label>
+                    <input type="number" className="form-control" placeholder="ZIP Code" />
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-4 pr-1">
+                  <div className="form-group ">
+                    <label >Choose Role</label>
+                    <div className="dropdown">
+                      <button className="dropdown-toggle form-control btn-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Institution
+                      </button>
+                      { <div className="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a className="dropdown-item" href="#">Institution 1</a>
+                        <a className="dropdown-item" href="#">Institution 2</a>
+                        <a className="dropdown-item" href="#">Institution 3</a>
+                        <a className="dropdown-item" href="#">Institution 4</a>
+                      </div> }
+>>>>>>> 94ef913334307d4c5e8451c3ccecb403e6b7dd62
                     </div>
                   </div>
                 </div>
@@ -248,7 +315,12 @@ const CreateAdmin = () => {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <InfoCard />
+=======
+      </div>
+      {/* <InfoCard/> */}
+>>>>>>> 94ef913334307d4c5e8451c3ccecb403e6b7dd62
     </div>
   );
 };
