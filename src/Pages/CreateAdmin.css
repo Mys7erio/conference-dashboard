@@ -206,8 +206,7 @@ input[type="text" i] {
     padding: 1px 2px;
 }
 user agent stylesheet
-input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
-}
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) 
 user agent stylesheet
 input {
    

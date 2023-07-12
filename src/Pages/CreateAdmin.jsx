@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Pages/CreateAdmin.css'
+import InfoCard from '../Components/InfoCard';
 const CreateAdmin = () => {
   return (
     <div className='CreateAdmin-container'>
@@ -41,7 +42,7 @@ const CreateAdmin = () => {
                 <div className="col-md-6 pl-1">
                   <div className="form-group">
                     <label>Phone number</label>
-                    <input type="number" className="form-control" placeholder="9100000002" defaultValue="8210000000" />
+                    <input type="number" className="form-control" placeholder="9100000002"/>
                   </div>
                 </div>
               </div>
@@ -107,7 +108,8 @@ const CreateAdmin = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      {/* <InfoCard/> */}
     </div>
   );
 };
