@@ -15,66 +15,52 @@ const AddInstitution = () => {
                    <div className="row">
                 <div className="col-md-4 pr-1">
                   <div className="form-group">
-                    <label>Institution ID*</label>
-                    <input type="text" className="form-control" placeholder='Institution ID'  />
-                  </div>
-                </div>
-                <div className="col-md-6 pr-1">
-                  <div className="form-group">
                     <label>Institution Name*</label>
-                    <input type="text" className="form-control" placeholder='Institution Name' />
+                    <input type="text" className="form-control" placeholder='Institution Name' required />
                   </div>
                 </div>
-                </div>
-                      
-                 <div className='col-md-8 pl-1'>
+              
+                <div className="col-md-4 px-1">
                   <div className="form-group">
-                    <label>Address*</label>
-                    <input type="text" className="form-control" placeholder='Address' />
+                    <label>Contact No*</label>
+                    <input type="text" className="form-control" placeholder='Contact No' required maxLength={10} minLength={10}  />
                   </div>
                 </div>
-                 
+                <div className="col-md-4 px-1">
+                  <div className="form-group">
+                    <label>Institution Email*</label>
+                    <input type="text" className="form-control" placeholder='Institution Email' required/>
+                  </div>
+                </div>
+                </div>
+                   
                       <div className="row">
                 <div className="col-md-4 pr-1">
                   <div className="form-group">
                     <label>country*</label>
-                    <input type="text" className="form-control" placeholder='country' />
+                    <input type="text" className="form-control" placeholder='country' required/>
                   </div>
                 </div>
                 <div className="col-md-4 px-1">
                   <div className="form-group">
                     <label>city*</label>
-                    <input type="text" className="form-control" placeholder='city' />
+                    <input type="text" className="form-control" placeholder='city' required/>
                   </div>
                 </div>
                 <div className="col-md-4 px-1">
                   <div className="form-group">
                     <label>Postal Code*</label>
-                    <input type="text" className="form-control" placeholder='Postal Code' />
+                    <input type="text" className="form-control" placeholder='Postal Code'required maxLength={6} minLength={6}/>
                   </div>
                 </div>
               </div>
-              
-                      <div className="row">
-                <div className="col-md-4 pr-1">
+              <div className='col-md-10 pl-1'>
                   <div className="form-group">
-                    <label>Institution Email*</label>
-                    <input type="text" className="form-control" placeholder='Institution Email'/>
+                    <label>Address*</label>
+                    <input type="text" className="form-control" placeholder='Address' required />
                   </div>
                 </div>
-                <div className="col-md-4 px-1">
-                  <div className="form-group">
-                    <label>Membership Type*</label>
-                    <input type="text" className="form-control" placeholder='Membership Type' />
-                  </div>
-                </div>
-                <div className="col-md-4 px-1">
-                  <div className="form-group">
-                    <label>Admine(s)* </label>
-                    <input type="text" className="form-control" placeholder='Admine(s)' />
-                  </div>
-                </div>
-              </div>
+                      
               <div className="btncontainer">
               <button type="submit" className="btn">Save</button>
               </div>
