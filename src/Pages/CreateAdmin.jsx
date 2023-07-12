@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../Pages/CreateAdmin.css";
-import InfoCard from "../Components/InfoCard";
 
 const CreateAdmin = () => {
   const [name, setName] = useState("");
