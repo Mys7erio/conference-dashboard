@@ -17,6 +17,9 @@ dependencies:
   react:
     specifier: ^18.2.0
     version: 18.2.0
+  react-awesome-button:
+    specifier: ^7.0.5
+    version: 7.0.5
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
@@ -878,6 +881,10 @@ packages:
 
   /@popperjs/core@2.11.8:
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+    dev: false
+
+  /@rcaferati/wac@1.0.0:
+    resolution: {integrity: sha512-7dVbzvcfL9o4UnrCaNeoIs7Ri9Ol+OMfpYYCJJV1dfm+5+pVM6DrvFjPzqifd2ACVABpXmwTQKy9KFxNm/7IdA==}
     dev: false
 
   /@remix-run/router@1.7.1:
@@ -2078,6 +2085,12 @@ packages:
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
+
+  /react-awesome-button@7.0.5:
+    resolution: {integrity: sha512-pNABRQsvnbd5rGL7mX9udWa0aPnXtP6hEL90/Cqjc/ERADpOMu3z6zix+AW/NOBp0NQoi9J+hhKoZS2dabs15g==}
+    dependencies:
+      '@rcaferati/wac': 1.0.0
+    dev: false
 
   /react-dom@18.2.0(react@18.2.0):
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}

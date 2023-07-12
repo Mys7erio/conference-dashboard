@@ -109,7 +109,7 @@ const CreateAdmin = () => {
         </div>
       </div>
       </div>
-      <InfoCard/>
+      {/* <InfoCard/> */}
     </div>
   );
 };
