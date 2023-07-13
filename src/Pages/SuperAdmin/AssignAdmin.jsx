@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Pages/AssignAdmin.css'
+import '../SuperAdmin/AssignAdmin.css'
 const AssignAdmin = () => {
   return (
     <div className='AssignAdmin-container'>
