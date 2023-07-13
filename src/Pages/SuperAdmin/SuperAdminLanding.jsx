@@ -1,10 +1,10 @@
 import React from 'react';
-import SuperAdminSidebar from '../Components/SuperAdminSidebar.jsx';
-import AddInstitution from '../Pages/AddInstitution.jsx';
-import CreateAdmin from '../Pages/CreateAdmin';
-import AssignAdmin from '../Pages/AssignAdmin';
-import SuperAdminDashboard from '../Pages/SuperAdminDashboard';
-import UserManagement from '../Pages/UserManagement';
+import SuperAdminSidebar from '../../Components/SuperAdminSidebar.jsx';
+import AddInstitution from '../SuperAdmin/AddInstitution.jsx';
+import CreateAdmin from '../SuperAdmin/CreateAdmin';
+import AssignAdmin from '../SuperAdmin/AssignAdmin';
+import SuperAdminDashboard from '../SuperAdmin/SuperAdminDashboard';
+import UserManagement from '../SuperAdmin/UserManagement.jsx';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 const SuperAdminLanding = () => {
   return (

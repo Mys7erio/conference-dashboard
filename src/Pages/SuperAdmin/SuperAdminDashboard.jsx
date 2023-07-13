@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Pages/SuperAdminDashboard.css'
+import '../SuperAdmin/SuperAdminDashboard.css'
 const SuperAdminDashboard = () => {
   return (
     <div className='AddInstitution-container'>

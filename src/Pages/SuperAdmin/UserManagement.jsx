@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Pages/UserManagement.css'
+import '../SuperAdmin/UserManagement.css'
 const UserManagement = () => {
   return (
     <div className='UserManagement-container'>

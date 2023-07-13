@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Pages/AddInstitution.css'
+import '../SuperAdmin/AddInstitution.css'
 const AddInstitution = () => {
   return (
     <div className='AddInstitution-container'>

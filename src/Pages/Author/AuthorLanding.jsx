@@ -1,5 +1,5 @@
 import React from 'react';
-import AuthorSidebar from '../Components/AuthorSidebar';
+import AuthorSidebar from '../../Components/AuthorSidebar';
 const AuthorLanding = () => {
   return (
     <div className='AuthorLanding-container'>
