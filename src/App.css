@@ -1,6 +1,6 @@
 #root {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .logo {
@@ -51,4 +51,12 @@ body{
 
 .SuperAdminSidebar{
   flex-basis: 30%;
+}
+
+.UserButton{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 7px;
+  margin-right: 5px;
 }

@@ -1,31 +1,38 @@
 import { useState } from 'react'
 import './App.css'
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
-import SuperAdminLanding from './Pages/SuperAdminLanding';
-import AuthorLanding from './Pages/AuthorLanding';
-import { colors } from '@mui/material';
+// import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
+import SuperAdminLanding from './Pages/SuperAdmin/SuperAdminLanding';
+import AuthorLanding from './Pages/Author/AuthorLanding';
 function App() {
-  const [checked, setChecked] = useState(false);
-  const [checked2, setChecked2] = useState(false);
+  const [activePage, setActivePage] = useState('SuperAdminLanding');
 
-  const handleChange = () => {
-    setChecked(!checked);
+  const handleButtonClick = (page) => {
+    setActivePage(page);
   };
 
-  const handleChange2 = () => {
-    setChecked2(!checked2);
+  const renderPage = () => {
+    switch (activePage) {
+      case 'SuperAdminLanding':
+        return <SuperAdminLanding />;
+      case 'AuthorLanding':
+        return <AuthorLanding />;
+      default:
+        return null; // Or a default page component for unknown pages
+    }
   };
+
+
   return (
-    <div className="home">
-      <div className="UserSelections">
-      <input type="checkbox" checked={checked} onChange={handleChange} /> <span style={{color:'black'}}>Super Admin</span>
-      {checked ? <SuperAdminLanding /> : ""}
-      <input type="checkbox" checked={checked2} onChange={handleChange2} /> <span style={{color:'black'}}>Author</span>
-      {checked2 ? <AuthorLanding /> : ""}
+   <>
+      <div className="UserButtons">
+        <button className='UserButton'  onClick={() => handleButtonClick('SuperAdminLanding')}>Super</button>
+        <button className='UserButton'  onClick={() => handleButtonClick('AuthorLanding')}>Author</button>
       </div>
-      
-    </div>
+
+      {renderPage()}
+
+   </>
     
   )
 }
