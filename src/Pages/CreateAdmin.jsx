@@ -34,6 +34,7 @@ const CreateAdmin = () => {
   const validateContactNumber = () => {
     if (!contactNumber) {
       setContactNumberError("Contact number is required.");
+      setErrorStyle("error");
     } else if (!/^\d{10}$/.test(contactNumber)) {
       setContactNumberError("Please enter a 10-digit contact number.");
     } else {
@@ -53,12 +54,18 @@ const CreateAdmin = () => {
 
   const handleSave = (e) => {
     e.preventDefault();
-
+  
     validateName();
     validateEmail();
     validateContactNumber();
     validatePinCode();
+  
+    if (!nameError && !emailError && !contactNumberError && !pinCodeError) {
+      console.log("Data saved successfully");
+
+    }
   };
+  
 
   return (
     <div className="CreateAdmin-container">
@@ -73,7 +80,7 @@ const CreateAdmin = () => {
                 <div className="row">
                   <div className="col-md-4 pr-1">
                     <div className="form-group">
-                      <label>First Name</label>
+                      <label>First Name*</label>
                       <input
                         type="text"
                         placeholder="Sara"
@@ -109,10 +116,10 @@ const CreateAdmin = () => {
                 <div className="row">
                   <div className="col-md-6 pr-1">
                     <div className="form-group">
-                      <label>Email</label>
+                      <label>Email*</label>
                       <input
                         type="email"
-                        placeholder="Sara@gmail.com"
+                        placeholder="email"
                         className="form-control"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
@@ -123,18 +130,16 @@ const CreateAdmin = () => {
                   </div>
                   <div className="col-md-6 pl-1">
                     <div className="form-group">
-                      <label>Phone number</label>
+                      <label>Phone number*</label>
                       <input
-                        type="text"
+                        type="text"  required maxLength={10} minLength={10}
                         placeholder="9210563100"
                         className="form-control"
                         value={contactNumber}
                         onChange={(e) => setContactNumber(e.target.value)}
                         onBlur={validateContactNumber}
                       />
-                      {contactNumberError && (
-                        <div>{contactNumberError}</div>
-                      )}
+                      {contactNumberError && <div className="error">{contactNumberError}</div>}
                     </div>
                   </div>
                 </div>
@@ -173,9 +178,9 @@ const CreateAdmin = () => {
                   </div>
                   <div className="col-md-4 pl-1">
                     <div className="form-group">
-                      <label>Postal Code</label>
+                      <label>Postal Code*</label>
                       <input
-                        type="text"
+                        type="text"  required maxLength={6} minLength={6}
                         value={pinCode}
                         onChange={(e) => setPinCode(e.target.value)}
                         onBlur={validatePinCode}
