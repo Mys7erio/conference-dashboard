@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import React from 'react';
-import SuperAdminLanding from './Pages/SuperAdminLanding';
-import AuthorLanding from './Pages/AuthorLanding';
+import SuperAdminLanding from './Pages/SuperAdmin/SuperAdminLanding';
+import AuthorLanding from './Pages/Author/AuthorLanding';
 function App() {
   const [activePage, setActivePage] = useState('SuperAdminLanding');
 
