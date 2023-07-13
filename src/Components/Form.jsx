@@ -33,7 +33,7 @@ export default function Form() {
     if (!contactNumber) {
       setContactNumberError('Contact number is required');
     } else if (!/^\d{10}$/.test(contactNumber)) {
-      setContactNumberError('Invalid contact number. Please enter a 10-digit number.');
+      setContactNumberError('Invalid contact number. Please enter  10-digit number.');
     } else {
       setContactNumberError('');
     }
