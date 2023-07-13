@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import SuperAdminLanding from './Pages/SuperAdminLanding';
 import AuthorLanding from './Pages/AuthorLanding';
-import { colors } from '@mui/material';
+
 function App() {
   const [checked, setChecked] = useState(false);
   const [checked2, setChecked2] = useState(false);
