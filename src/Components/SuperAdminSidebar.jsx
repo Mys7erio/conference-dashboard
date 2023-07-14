@@ -22,7 +22,7 @@ const SuperAdminSidebar = () => {
         <MenuItem icon={<FaUserPlus/>} component={<Link to="/CreateAdmin"/>}>Create Admins</MenuItem>
         {/* <MenuItem icon={<FaUserTag />} component={<Link to="/AssignAdmin"/>}>Assign Admin</MenuItem> */}
         <MenuItem icon={<FaChartLine />} component={<Link to="/SuperAdminDashboard"/>}>Dashboard</MenuItem>
-        <MenuItem icon={<FaUserEdit />} component={<Link to="/UserManagement"/>}>User Management</MenuItem>
+        <MenuItem icon={<FaUserEdit />} component={<Link to="/AdminUserTab"/>}>User Management(Admin)</MenuItem>
         <div className="SuperAdminSidebarEnd">
         <button className='NotificationButton SidebarButtons'>
           <FaBell /> Notifications

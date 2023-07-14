@@ -4,7 +4,7 @@ import AddInstitution from '../SuperAdmin/AddInstitution.jsx';
 import CreateAdmin from '../SuperAdmin/CreateAdmin';
 import AssignAdmin from '../SuperAdmin/AssignAdmin';
 import SuperAdminDashboard from '../SuperAdmin/SuperAdminDashboard';
-import UserManagement from '../SuperAdmin/UserManagement.jsx';
+import UserManagement from '../Admin/AdminUserTab';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 const SuperAdminLanding = () => {
   return (
@@ -16,7 +16,7 @@ const SuperAdminLanding = () => {
             <Route path="/CreateAdmin" element={<CreateAdmin />} />
             <Route path="/AssignAdmin" element={<AssignAdmin />} />
             <Route path="/SuperAdminDashboard" element={<SuperAdminDashboard />} />
-            <Route path="/UserManagement" element={<UserManagement />} />
+            <Route path="/AdminUserTab" element={<UserManagement />} />
           </Routes>  
         </div>
       </Router>

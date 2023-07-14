@@ -114,7 +114,7 @@
   .card-header {
     margin-bottom: 0;
   }
-  . .page-link {
+  .page-link {
     position: relative;
     display: block;
     padding: 0.5rem 0.75rem;
@@ -269,5 +269,4 @@
       min-height: 1px;
       padding: 1.25rem;
   }
-  .card-body{}
   
