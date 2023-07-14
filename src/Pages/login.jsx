@@ -3,7 +3,7 @@ import React from 'react';
 const LoginPage = () => {
   return (
     <div className="wrapper wrapper-full-page">
-      <div className="full-page section-image" filter-color="black" data-image="../Background.png">
+      <div className="full-page section-image" filter-color="black" data-image="./LoginBG.png">
         <div className="content">
           <div style={{
             background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)',

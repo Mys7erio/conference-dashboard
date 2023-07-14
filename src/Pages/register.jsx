@@ -3,7 +3,7 @@ import React from 'react';
 const RegisterPage = () => {
   return (
     <div className="wrapper wrapper-full-page">
-      <div className="full-page register-page section-image" filter-color="black" data-image="../../assets/img/bg/jan-sendereks.jpg">
+      <div className="full-page register-page section-image" filter-color="black" data-image="./RegisterBG.jpg">
         <div className="content">
           <div style={{
             background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)',
